@@ -1,0 +1,2 @@
+C:\Users\ZomserchXD\Desktop\Programación y Diseño de Juegos\ProyectoCalculo\Release_App\CalculoFormsApp.pdb
+C:\Users\ZomserchXD\Desktop\Programación y Diseño de Juegos\ProyectoCalculo\Release_App\CalculoFormsApp.exe

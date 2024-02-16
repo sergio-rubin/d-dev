@@ -1,0 +1,91 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Esta aplicación utiliza la sintaxis de las instrucciones de python para recibir las expresiones algebraicas. 
+A continuación, se muestra un pequeño resumen de ésta sintaxis:
+
+Operaciones Básicas:
+El programa sigue la jerarquía de operaciones, por lo que primero se ejecutarán las operaciones entre paréntesis, 
+luego las potencias y las raíces, después las multiplicaciones y divisiones y, finalmente, las sumas y las restas.
+Los únicos símbolos de agrupación disponibles son los paréntesis, usar corchetes o llaves producirá un error.
+
+La suma se hace con el operador +
+La resta se hace con el operador -
+La multiplicación se hace con el operador *
+La división se hace con el operador /
+
+La multiplicación siempre debe expresarse con el operador * para evitar errores. 
+Ejemplo de expresiones incorrectas: 2x, 2(x+1). 
+Ejemplo de expresiones correctas: 2*x, 2*(x+1)
+
+Potencias y Raíces:
+Las potencias se representan con el operador **. Aquí un ejemplo de un número elevado al cuadrado: x**2.
+Las raíces se pueden expresar con exponentes fraccionarios o decimales, pero tambien con la función sqrt(). 
+Ejemplo de la raíz cuadrada de un número: x**(0.5) = x**.5 = x**(1/2) = sqrt(x)
+
+Funciones Trigonométricas:
+Las funciones básicas se escriben: sin(x) o sen(x), cos(x) y tan(x)
+Las funciones recíprocas en esta versión no están definidas, por lo que se deben escribir de las siguientes maneras:
+Cotangente: 1/tan(x) o tan(x)**(-1)
+Secante: 1/cos(x) o cos(x)**(-1)
+Cosecante: 1/sin(x) o sin(x)**(-1)
+</value>
+  </data>
+</root>
