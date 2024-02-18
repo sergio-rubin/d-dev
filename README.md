@@ -3,7 +3,7 @@
 ## Descripción:
 
 #### Proyecto: d/dev x App
-#### Versión: 1.2.2
+#### Versión: 1.0.0
 
 ### Origen:
 #### Autores: 
