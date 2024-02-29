@@ -174,5 +174,46 @@ namespace CalculoFormsApp
 
             HideSubMenu();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CloseChildForm();
+
+            OpenChildForm(new Form10());
+
+            HideSubMenu();
+        }
+
+        private void btnChatGPT_Click_1(object sender, EventArgs e)
+        {
+            CloseChildForm();
+
+            OpenChildForm(new Form9());
+
+            HideSubMenu();
+        }
+
+        private void BtnInstrUso_Click_1(object sender, EventArgs e)
+        {
+            CloseChildForm();
+
+            OpenChildForm(new Form8());
+
+            HideSubMenu();
+        }
+
+        private void BtnConfiguración_Click_1(object sender, EventArgs e)
+        {
+            CloseChildForm();
+
+            OpenChildForm(new Form7());
+
+            HideSubMenu();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

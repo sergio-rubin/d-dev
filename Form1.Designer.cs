@@ -30,8 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelSideMenu = new System.Windows.Forms.Panel();
-            this.BtnInstrUso = new System.Windows.Forms.Button();
             this.BtnConfiguración = new System.Windows.Forms.Button();
+            this.BtnInstrUso = new System.Windows.Forms.Button();
+            this.btnChatGPT = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.BtnCalDer = new System.Windows.Forms.Button();
             this.SubPanelCalLim = new System.Windows.Forms.Panel();
             this.BtnSubPanelGraLim = new System.Windows.Forms.Button();
@@ -46,7 +48,6 @@
             this.PanelChildForm = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BgLogo = new System.Windows.Forms.Panel();
-            this.btnChatGPT = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.SubPanelCalLim.SuspendLayout();
             this.SubPanelCalEc.SuspendLayout();
@@ -60,9 +61,10 @@
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.panelSideMenu.Controls.Add(this.btnChatGPT);
-            this.panelSideMenu.Controls.Add(this.BtnInstrUso);
             this.panelSideMenu.Controls.Add(this.BtnConfiguración);
+            this.panelSideMenu.Controls.Add(this.BtnInstrUso);
+            this.panelSideMenu.Controls.Add(this.btnChatGPT);
+            this.panelSideMenu.Controls.Add(this.button1);
             this.panelSideMenu.Controls.Add(this.BtnCalDer);
             this.panelSideMenu.Controls.Add(this.SubPanelCalLim);
             this.panelSideMenu.Controls.Add(this.BtnCalLim);
@@ -76,6 +78,25 @@
             this.panelSideMenu.Size = new System.Drawing.Size(350, 853);
             this.panelSideMenu.TabIndex = 0;
             // 
+            // BtnConfiguración
+            // 
+            this.BtnConfiguración.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnConfiguración.FlatAppearance.BorderSize = 0;
+            this.BtnConfiguración.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.BtnConfiguración.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnConfiguración.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnConfiguración.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnConfiguración.ForeColor = System.Drawing.Color.Snow;
+            this.BtnConfiguración.Location = new System.Drawing.Point(0, 546);
+            this.BtnConfiguración.Name = "BtnConfiguración";
+            this.BtnConfiguración.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnConfiguración.Size = new System.Drawing.Size(350, 45);
+            this.BtnConfiguración.TabIndex = 12;
+            this.BtnConfiguración.Text = "Acerca de";
+            this.BtnConfiguración.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnConfiguración.UseVisualStyleBackColor = true;
+            this.BtnConfiguración.Click += new System.EventHandler(this.BtnConfiguración_Click_1);
+            // 
             // BtnInstrUso
             // 
             this.BtnInstrUso.Dock = System.Windows.Forms.DockStyle.Top;
@@ -86,34 +107,53 @@
             this.BtnInstrUso.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnInstrUso.ForeColor = System.Drawing.Color.Snow;
             this.BtnInstrUso.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnInstrUso.Location = new System.Drawing.Point(0, 443);
+            this.BtnInstrUso.Location = new System.Drawing.Point(0, 501);
             this.BtnInstrUso.Name = "BtnInstrUso";
             this.BtnInstrUso.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.BtnInstrUso.Size = new System.Drawing.Size(350, 45);
-            this.BtnInstrUso.TabIndex = 8;
+            this.BtnInstrUso.TabIndex = 11;
             this.BtnInstrUso.Text = "Instrucciones de Uso";
             this.BtnInstrUso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnInstrUso.UseVisualStyleBackColor = true;
-            this.BtnInstrUso.Click += new System.EventHandler(this.BtnInstrUso_Click);
+            this.BtnInstrUso.Click += new System.EventHandler(this.BtnInstrUso_Click_1);
             // 
-            // BtnConfiguración
+            // btnChatGPT
             // 
-            this.BtnConfiguración.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnConfiguración.FlatAppearance.BorderSize = 0;
-            this.BtnConfiguración.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.BtnConfiguración.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BtnConfiguración.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnConfiguración.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnConfiguración.ForeColor = System.Drawing.Color.Snow;
-            this.BtnConfiguración.Location = new System.Drawing.Point(0, 398);
-            this.BtnConfiguración.Name = "BtnConfiguración";
-            this.BtnConfiguración.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnConfiguración.Size = new System.Drawing.Size(350, 45);
-            this.BtnConfiguración.TabIndex = 7;
-            this.BtnConfiguración.Text = "Acerca de";
-            this.BtnConfiguración.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnConfiguración.UseVisualStyleBackColor = true;
-            this.BtnConfiguración.Click += new System.EventHandler(this.BtnConfiguración_Click);
+            this.btnChatGPT.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnChatGPT.FlatAppearance.BorderSize = 0;
+            this.btnChatGPT.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnChatGPT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnChatGPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChatGPT.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnChatGPT.ForeColor = System.Drawing.Color.Snow;
+            this.btnChatGPT.Location = new System.Drawing.Point(0, 456);
+            this.btnChatGPT.Name = "btnChatGPT";
+            this.btnChatGPT.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnChatGPT.Size = new System.Drawing.Size(350, 45);
+            this.btnChatGPT.TabIndex = 10;
+            this.btnChatGPT.Text = "ChatGPT";
+            this.btnChatGPT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChatGPT.UseVisualStyleBackColor = true;
+            this.btnChatGPT.Click += new System.EventHandler(this.btnChatGPT_Click_1);
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.Snow;
+            this.button1.Location = new System.Drawing.Point(0, 398);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(350, 58);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Calculadora de Problemas de Técnicas de Conteo (BETA)";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // BtnCalDer
             // 
@@ -312,6 +352,7 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // BgLogo
             // 
@@ -324,25 +365,6 @@
             this.BgLogo.Size = new System.Drawing.Size(365, 343);
             this.BgLogo.TabIndex = 0;
             this.BgLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.BgLogo_Paint);
-            // 
-            // btnChatGPT
-            // 
-            this.btnChatGPT.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnChatGPT.FlatAppearance.BorderSize = 0;
-            this.btnChatGPT.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnChatGPT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnChatGPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChatGPT.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnChatGPT.ForeColor = System.Drawing.Color.Snow;
-            this.btnChatGPT.Location = new System.Drawing.Point(0, 488);
-            this.btnChatGPT.Name = "btnChatGPT";
-            this.btnChatGPT.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnChatGPT.Size = new System.Drawing.Size(350, 45);
-            this.btnChatGPT.TabIndex = 9;
-            this.btnChatGPT.Text = "ChatGPT";
-            this.btnChatGPT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChatGPT.UseVisualStyleBackColor = true;
-            this.btnChatGPT.Click += new System.EventHandler(this.btnChatGPT_Click);
             // 
             // Form1
             // 
@@ -381,7 +403,6 @@
         private Panel SubPanelCalEc;
         private Button BtnSubPanelSisEc;
         private Button BtnSubPanelEc;
-        private Button BtnConfiguración;
         private Button BtnCalDer;
         private Panel SubPanelCalLim;
         private Button BtnSubPanelGraLim;
@@ -390,8 +411,10 @@
         private Panel PanelChildForm;
         private Panel LogoPanel;
         private Panel BgLogo;
-        private Button BtnInstrUso;
         private GroupBox groupBox1;
+        private Button button1;
+        private Button BtnConfiguración;
+        private Button BtnInstrUso;
         private Button btnChatGPT;
     }
 }
